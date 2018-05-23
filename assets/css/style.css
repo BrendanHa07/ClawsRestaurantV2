@@ -10,3 +10,16 @@
 body {
     font-family: "lithosPro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+nav li a:hover {
+	background-color: rgb(204, 20, 38);
+}
+
+.navbar{
+	padding: 0;
+}
+
+.nav-link {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
