@@ -1,0 +1,12 @@
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+@font-face {
+    font-family: lithosPro;
+    src: url("./font/LithosPro-Regular.otf");
+}
+
+body {
+    font-family: "lithosPro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
