@@ -1,5 +1,6 @@
 .jumbotron {
     margin-bottom: 0px;
+    background-color: black;
 }
 
 @font-face {
@@ -9,6 +10,44 @@
 
 body {
     font-family: "lithosPro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#store-name {
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(204, 20, 38)
+}
+
+#slogan {
+    color: #ffffff;
+    margin-top: 35px;
+}
+
+#promotion {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.footer-text {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+#footer{
+    background-color:  rgb(229, 210, 39);
+    height: 100px;
+}
+
+.fab {
+    margin-top: 30px;
+}
+
+a {
+    color: inherit;
+}
+
+.about-photo {
+    margin-bottom: 40px;
 }
 
 nav li a:hover {
