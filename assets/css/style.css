@@ -29,13 +29,13 @@ body {
 }
 
 .footer-text {
-    margin-left: 100px;
-    margin-top: 30px;
+    text-align: center;
 }
 
 #footer{
     background-color:  rgb(229, 210, 39);
-    height: 100px;
+		height: 150px;
+		text-align: center;
 }
 
 .fab {
@@ -61,4 +61,13 @@ nav li a:hover {
 .nav-link {
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .jumbotron{
+			display: none;
+		}
+		.navbar-brand {
+			padding-left: 15px;
+		}
 }
