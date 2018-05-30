@@ -69,5 +69,13 @@ nav li a:hover {
 		}
 		.navbar-brand {
 			padding-left: 15px;
+			font-weight: bold;
+			color: rgb(204, 20, 38);
+		}
+		.navbar-nav {
+			color: inherit;
+		}
+		.nav-fill {
+			float: left;
 		}
 }
