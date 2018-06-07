@@ -9,7 +9,8 @@
 }
 
 body {
-    font-family: "lithosPro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "lithosPro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding-top: 70px;
 }
 
 #store-name {
@@ -29,7 +30,8 @@ body {
 }
 
 .footer-text {
-    text-align: center;
+	text-align: center;
+	margin-top: 20px;
 }
 
 #footer{
@@ -63,6 +65,23 @@ nav li a:hover {
 	padding-bottom: 10px;
 }
 
+.navbar-nav > li{
+	padding-left:30px;
+	padding-right:30px;
+  }
+
+@media (min-width: 768px) {
+	.navbar-brand {
+		padding-left: 15px;
+		font-weight: bold;
+		color: rgb(204, 20, 38);
+	}
+	.nav-item {
+		padding-left: 15px;
+	}
+}
+
+
 @media (max-width: 768px) {
     .jumbotron{
 			display: none;
@@ -72,10 +91,13 @@ nav li a:hover {
 			font-weight: bold;
 			color: rgb(204, 20, 38);
 		}
+		.nav-item {
+			padding-left: 15px;
+		}
 		.navbar-nav {
 			color: inherit;
 		}
 		.nav-fill {
-			float: left;
+			float: right;
 		}
 }
