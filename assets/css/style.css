@@ -25,7 +25,8 @@ body {
 
 #promotion {
     font-size: 1.5em;
-    margin-top: 30px;
+	margin-top: 30px;
+	height: 400px;
 }
 
 .footer-text {
@@ -33,10 +34,16 @@ body {
 	margin-top: 20px;
 }
 
+#wrapper {
+	position: relative;
+}
+
 #footer{
-    background-color:  rgb(229, 210, 39);
-		height: 150px;
-		text-align: center;
+  background-color:  rgb(229, 210, 39);
+	height: 150px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
 }
 
 .fab {
