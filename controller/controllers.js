@@ -18,7 +18,7 @@ router.get('/menu', (req, res) => {
   res.render('menu');
 });
 
-router.get('/jobs', (req, res) => {
+router.get('/join', (req, res) => {
   res.render('join');
 });
 

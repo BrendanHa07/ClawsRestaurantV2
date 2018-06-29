@@ -29,19 +29,20 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	height: 400px;
 	font-size: 3.5em;
 	display: flex;
     justify-content: center;
     align-items: center;
-	height: 10em;
+	height:400px;
 	color: white;
-	z-index: -1;
+	margin-bottom: 25px;
 }
 
 .info {
 	z-index: 1;
 	position: relative;
+	letter-spacing: 0px;
+	font-stretch: ultra-condensed;
 }
 
 .footer-text {
@@ -69,6 +70,11 @@ a {
     color: inherit;
 }
 
+#about {
+	height: 500px;
+	margin-bottom: 25px;
+}
+
 .about-photo {
     margin-bottom: 40px;
 }
@@ -76,11 +82,20 @@ a {
 .navbar{
 	padding: 0;
 	min-height: 80px;
+	background: black;
 }
 
-.nav-link {
+.navbar-brand {
+	font-size: 40px;
+}
+
+.nav-link > li {
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+	color: #ffffff;
 }
 
 .navbar-nav > li{
@@ -90,7 +105,7 @@ a {
 
 @media (min-width: 768px) {
 	.navbar-brand {
-		padding-left: 15px;
+		padding-left: 20px;
 		font-weight: bold;
 		color: rgb(204, 20, 38);
 	}
