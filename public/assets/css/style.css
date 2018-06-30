@@ -3,13 +3,9 @@
     background-color: black;
 }
 
-@font-face {
-    font-family: lithosPro;
-    src: url("./font/LithosPro-Regular.otf");
-}
-
 body {
-	font-family: "lithosPro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Passion One', cursive;
+
 }
 
 #store-name {
@@ -41,13 +37,13 @@ body {
 .info {
 	z-index: 1;
 	position: relative;
-	letter-spacing: 0px;
-	font-stretch: ultra-condensed;
+	font-family: 'Passion One', cursive;
 }
 
 .footer-text {
 	text-align: center;
 	margin-top: 20px;
+	color: #ffffff;
 }
 
 #wrapper {
@@ -55,7 +51,7 @@ body {
 }
 
 #footer{
-  background-color:  rgb(229, 210, 39);
+  	background-color: #000;
 	height: 150px;
 	text-align: center;
 	width: 100%;
@@ -67,22 +63,34 @@ body {
 }
 
 a {
-    color: inherit;
+    color: #ffffff;
+}
+
+a:hover{
+	color:  rgb(204, 20, 38);
+}
+
+.navbar .navbar-nav .active a:hover {
+	color: rgb(204, 20, 38);
 }
 
 #about {
-	height: 500px;
+	height: 100%;
 	margin-bottom: 25px;
 }
 
+.about-text {
+	margin-top: 15px;
+}
 .about-photo {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
+	margin-top: 25px;
 }
 
 .navbar{
 	padding: 0;
 	min-height: 80px;
-	background: black;
+	background-color: #000 !important;
 }
 
 .navbar-brand {
@@ -99,8 +107,18 @@ a {
 }
 
 .navbar-nav > li{
-	padding-left:30px;
-	padding-right:30px;
+	padding-left:15px;
+	padding-right:15px;
+  }
+
+.navbar-dark {
+	color: #ffffff;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
   }
 
 @media (min-width: 768px) {
