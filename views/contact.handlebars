@@ -7,14 +7,14 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p style="padding-top: 25px;">We appreciate your interest in Claws Restaurant and welcome any comments or suggestions. Please fill out this form and we will get back to you as soon as possible!</p>
+                <p style="padding-top: 25px; text-align: center;">We appreciate your interest in Claws Restaurant and welcome any comments or suggestions. Please fill out this form and we will get back to you as soon as possible!</p>
               </div>
             </div>
+            {{ msg }}
             <form method="POST" action="/send">
               <div class="form-group">
                 <div class="row">
                   <div class="col">
-                     {{ msg }} 
                     <label for="name">Name</label>
                     <input type="text" class="form-control" name="name">
                   </div>
@@ -34,6 +34,12 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn-danger" style="margin-bottom: 20px;" type="submit">Submit</button>
+              <div class="row">
+                <div class="col">
+                  <div class="g-recaptcha" data-sitekey="6LcWrwgTAAAAAL962YXw8PURaMKWgv2SXzzL_3JX">
+                    </div>
+                </div>
+              </div>
+              <button class="btn btn-danger" type="submit">Submit</button>
             </form>
           </div>

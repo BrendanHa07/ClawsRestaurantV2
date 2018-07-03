@@ -1,11 +1,10 @@
-.jumbotron {
-    margin-bottom: 0px;
-    background-color: black;
+@font-face {
+	font-family: lithosPro;
+	src: url(../css/font/LithosPro-Regular.otf);
 }
 
 body {
 	font-family: 'Passion One', cursive;
-
 }
 
 #store-name {
@@ -22,13 +21,13 @@ body {
 #promotion {
 	background-image: url("../images/brownwood.jpg");
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	font-size: 3.5em;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 	height:400px;
 	color: white;
 	margin-bottom: 25px;
@@ -79,6 +78,10 @@ a:hover{
 	margin-bottom: 25px;
 }
 
+button {
+	margin: 5px 0px 15px 0px;
+}
+
 .about-text {
 	margin-top: 15px;
 }
@@ -101,6 +104,7 @@ a:hover{
 
 .navbar-brand {
 	font-size: 40px;
+	font-family: "lithosPro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .nav-link > li {
@@ -159,4 +163,10 @@ img {
 		.nav-fill {
 			float: right;
 		}
+}
+
+@media (max-width: 600px) {
+	.navbar-brand {
+		font-size: 30px;
+	}
 }

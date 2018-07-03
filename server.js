@@ -5,6 +5,9 @@ var nodemailer = require("nodemailer");
 var path = require("path");
 var exphbs = require("express-handlebars")
 var app = express();
+const dotenv = require('dotenv')
+
+require('dotenv').config();
 
 var port = process.env.PORT || 3030;
 
@@ -29,40 +32,47 @@ var routes = require('./controller/controllers.js')
 app.use('/', routes);
 
 app.post('/send', function(req, res) {
-  console.log(req.body.email);
+//   console.log(req.body.email);
   res.render('contact', { msg: 'Email has been sent!'});
 
+  const output = `
+    <p> You have a new inquiry </p>
+    <p> Contact Detail </p>
+    <ul>
+        <li>${req.body.name}</li>
+        <li>${req.body.email}</li>
+        <li>${req.body.phone_number}</li>
+    </ul>
+    <h3>Message</h3>
+    <p>${req.body.message}</p>
+  `
   let transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false, // true for 465, false for other ports
+    service : 'gmail',
+    secure: false,
+    port: 25,
     auth: {
-        user: 'ha.brendan07@gmail.com', // generated ethereal user
-        pass: 'Crawfish890!' // generated ethereal password
+        user: process.env.USER,
+        pass: process.env.PASS
+    },
+    tls: {
+        rejectUnauthorized: false
     }
-});
+  });
+  let HelperOptions = {
+      from: req.body.email,
+      to: 'clawsrestaurants@gmail.com',
+      subject: 'New Online Inquiry',
+      html: output
+  };
+  transporter.sendMail(HelperOptions, (err, info) => {
+      if (err) {
+          throw err
+      } else {
+          console.log("The message has been sent")
+          console.log(info);
+      }
+  })
 
-// setup email data with unicode symbols
-let mailOptions = {
-    from: req.body.email, // sender address
-    to: 'ha.brendan07@gmail.com', // list of receivers
-    subject: 'New Inquiry', // Subject line
-    text: 'Hello world?', // plain text body
-    html: '<b>Hello world?</b>' // html body
-};
-
-// send mail with defined transport object
-transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-        return console.log(error);
-    }
-    console.log('Message sent: %s', info.messageId);
-    // Preview only available when sending through an Ethereal account
-    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-});
 });
 
 app.listen(port, () => console.log("App is listening on port: " + port));
