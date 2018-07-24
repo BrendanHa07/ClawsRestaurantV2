@@ -5,6 +5,7 @@
 
 body {
 	font-family: 'Passion One', cursive;
+	color: #000;
 }
 
 #store-name {
@@ -19,7 +20,7 @@ body {
 }
 
 #promotion {
-	background-image: url("../images/brownwood.jpg");
+	background-image: url("../images/shark.JPG");
 	/* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -31,6 +32,10 @@ body {
 	height:400px;
 	color: white;
 	margin-bottom: 25px;
+}
+
+hr {
+	border-color: #000;
 }
 
 .info {
@@ -69,6 +74,10 @@ a:hover{
 	color:  rgb(204, 20, 38);
 }
 
+.happyHour:hover {
+	color: #000;
+}
+
 .navbar .navbar-nav .active a:hover {
 	color: rgb(204, 20, 38);
 }
@@ -79,7 +88,7 @@ a:hover{
 }
 
 #drink {
-	background: linear-gradient(to top right,rgb(229, 222, 20), rgb(204, 20, 38));
+	background: rgb(204, 20, 38);
 }
 
 button {
@@ -137,6 +146,7 @@ img {
 	display: block;
 	max-width: 100%;
 	height: auto;
+	border: 1px solid #000000;
 	}
 
 #img-right {
