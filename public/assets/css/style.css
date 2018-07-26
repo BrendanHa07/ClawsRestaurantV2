@@ -14,11 +14,6 @@ body {
     color: rgb(204, 20, 38)
 }
 
-#slogan {
-    color: #ffffff;
-    margin-top: 35px;
-}
-
 #promotion {
 	background-image: url("../images/shark.JPG");
 	/* background-attachment: fixed; */
@@ -93,6 +88,20 @@ a:hover{
 
 button {
 	margin: 5px 0px 15px 0px;
+}
+
+.modal-image{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn.btn-danger {
+	background: rgb(204, 20, 38);
+}
+
+.btn.btn-dark {
+	background: #000;
 }
 
 .about-text {
@@ -177,8 +186,14 @@ img {
 	.nav-item {
 		padding-left: 15px;
 	}
+	p {
+		font-size: 18px;
+	}
 	#promotion {
 		background-attachment: fixed;
+	}
+	.info > p {
+		font-size: 50px;
 	}
 }
 
@@ -201,7 +216,7 @@ img {
 			color: rgb(204, 20, 38);
 		}
 		#promotion {
-			font-size: 2.5em;
+			font-size: 2em;
 		}
 		.nav-item {
 			padding-left: 15px;
