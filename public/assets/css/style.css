@@ -197,6 +197,12 @@ img {
 	}
 }
 
+@media(max-width: 900px) {
+	#promotion {
+		background-size: 1000px;
+	}
+}
+
 @media (max-width: 768px) {
 		#img-right {
 			display: block;
@@ -217,6 +223,8 @@ img {
 		}
 		#promotion {
 			font-size: 2em;
+			background-position: cover;
+			background-size: 950px;
 		}
 		.nav-item {
 			padding-left: 15px;
