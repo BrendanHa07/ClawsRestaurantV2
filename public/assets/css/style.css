@@ -170,6 +170,12 @@ img {
 	border: 1px solid #000000;
 	}
 
+.logoImage {
+	display: block;
+	margin: 30px auto 30px auto;
+	border: none;
+}
+
 #img-right {
 	float: right;
 	margin-top: 40px;
