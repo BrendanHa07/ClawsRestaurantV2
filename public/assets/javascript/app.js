@@ -1,3 +1,3 @@
-$('#menuButton').on('click', function () {
+$('#menuButton').on('click', () => {
   window.location = '/menu' ;
 });
