@@ -17,7 +17,7 @@ body {
 #promotion {
 	background-image: url("../images/shark.JPG");
   background-position: center;
-  background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
 	font-size: 3.5em;
 	display: flex;
